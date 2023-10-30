@@ -2376,6 +2376,7 @@ h3,
 h4,
 h5,
 h6 {
+
   font-weight: bold; }
 
 button,
@@ -7410,8 +7411,8 @@ fieldset[disabled] .form-control {
       top: 3px;
       left: 5px; }
       .dropdown-menu ul.menu .menu-info h4 {
-        margin: 0;
-        font-size: 13px;
+        margin: 0px;
+        font-size: 15px;
         color: #333; }
       .dropdown-menu ul.menu .menu-info p {
         margin: 0;
@@ -7578,7 +7579,7 @@ fieldset[disabled] .form-control {
         padding: 8px 16px; }
       .sidebar .menu .list i.material-icons {
         margin-top: 4px; }
-      .sidebar .menu .list .menu-toggle:after, .sidebar .menu .list .menu-toggle:before {
+      /* .sidebar .menu .list .menu-toggle:after, .sidebar .menu .list .menu-toggle:before {
         position: absolute;
         top: calc(50% - 14px);
         right: 17px;
@@ -7617,7 +7618,7 @@ fieldset[disabled] .form-control {
         -ms-transform: scale(1);
         -o-transform: scale(1);
         -webkit-transform: scale(1);
-        transform: scale(1); }
+        transform: scale(1); } */
       .sidebar .menu .list a {
         color: #747474;
         position: relative;
