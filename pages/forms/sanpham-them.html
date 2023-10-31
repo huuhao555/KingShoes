@@ -29,6 +29,7 @@
 
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
     <link href="../../css/themes/all-themes.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/new.css">
 </head>
 
 <body class="theme-red">
@@ -229,7 +230,7 @@
             <!-- #Footer -->
         </aside>
         <!-- #END# Left Sidebar -->
-        <section class="content" style="width: 50%; padding-left: 200px;">
+        <section class="content" style="width: 80%; padding-left: 100px; padding-right: 100px;">
             <div class="container-fluid">
                 <div class="row clearfix">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" > 
@@ -249,29 +250,36 @@
                                         <div class="body" style="width: 100%;">
                                             <form id="form_validation" method="POST" action="sanpham-them.html">
                                                 <div class="form-group form-float">
-                                                    <div class="form-line">
-                                                        <input type="text" class="form-control" name="name" required>
-                                                        <label class="form-label">Tên sản phẩm</label>
+                                                    <div class="ten-sanpham">
+                                                        <label class="form-label">Tên sản phẩm: </label>
+                                                        <input type="text" style= "width: 300px; border: none; border-bottom: dotted 2px #000;" name="name" required>
+                                                    </div>
+                                                </br>
+                                                    <div class="gia-sanpham" >
+                                                        <label class="form-label" >Giá sản phẩm: </label>
+                                                        <input type="text"  style="width: 80px; border: none; border-bottom: dotted 2px #000;" required name="giasanpham" id="numberInput" >
+                                                        <label class="form-label" style="font-weight: normal;">đồng </label>
                                                     </div>
                                                 </div>
-                                                <div class="form-group" style="margin: 0;"> <h2 style="font-size: 15px;">Giới tính</h2>
-                                                    <input type="radio" name="gender" id="male" class="with-gap">
-                                                    <label for="male">Nam</label>
-                                                    <input type="radio" name="gender" id="female" class="with-gap">
-                                                    <label for="female" class="m-l-20">Nữ</label>
-                                                </div>
-                                                <br class="sanpham-them">
-                                                    <h2 style="font-size: 15px;">Số lượng: </h2>
-                                                    <label class="form-label">Size 37: </label> <input type="number" style="width: 40px;">
-                                                    <label class="form-label">Size 38: </label> <input type="number" style="width: 40px;">
-                                                    <label class="form-label">Size 39: </label> <input type="number" style="width: 40px;">
-                                                    <label class="form-label">Size 40: </label> <input type="number" style="width: 40px;"> </br>
-                                                    <label class="form-label">Size 41: </label> <input type="number" style="width: 40px;">
-                                                    <label class="form-label">Size 42: </label> <input type="number" style="width: 40px;">
-                                                    <label class="form-label">Size 43: </label> <input type="number" style="width: 40px;">
-                                                    <label class="form-label">Size 44: </label> <input type="number" style="width: 40px;">
-                                                </div>
-                                                <button class="btn btn-primary waves-effect" type="submit" style=" position: relative; left: 200px; bottom: 10px;" >Thêm sản phẩm</button>
+                                                    <div class="sanpham-them">
+                                                        <h2 style="font-size: 15px;">Số lượng: </h2>
+                                                        <label class="form-label" style="font-weight: normal;" >Size 37: </label> <input type="number" style="width: 40px;">
+                                                        <label class="form-label" style="font-weight: normal;" >Size 38: </label> <input type="number" style="width: 40px;">
+                                                        <label class="form-label" style="font-weight: normal;" >Size 39: </label> <input type="number" style="width: 40px;">
+                                                        <label class="form-label" style="font-weight: normal;" >Size 40: </label> <input type="number" style="width: 40px;"> </br>
+                                                        <label class="form-label" style="font-weight: normal;" >Size 41: </label> <input type="number" style="width: 40px;">
+                                                        <label class="form-label" style="font-weight: normal;" >Size 42: </label> <input type="number" style="width: 40px;">
+                                                        <label class="form-label" style="font-weight: normal;" >Size 43: </label> <input type="number" style="width: 40px;">
+                                                        <label class="form-label" style="font-weight: normal;" >Size 44: </label> <input type="number" style="width: 40px;">
+                                                    </div> 
+                                                    <div class="color-shoes">
+                                                        <h3>Chọn màu: </h3>
+                                                        <a href="#" class="color-shoes--black"></a>
+                                                        <a href="#" class="color-shoes--white"></a>
+                                                        <a href="#" class="color-shoes--red"></a>
+                                                        <a href="#" class="color-shoes--green"></a>
+                                                    </div>
+                                                <button class="btn btn-primary waves-effect" type="submit"  >Thêm sản phẩm</button>
                                             </form>
                                         </div>
                                     </div>
@@ -350,6 +358,7 @@
  
      <!-- Demo Js -->
      <script src="../../js/demo.js"></script>
+     <script src="../../js/new.js"> </script>
 </body>
 
 </html>

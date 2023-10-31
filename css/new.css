@@ -1,0 +1,38 @@
+.color-shoes{
+    display: flex;
+   position: relative;
+}
+.color-shoes h3{
+font-size: 15px;
+margin: 10px 0;
+width: 100px;
+}
+.color-shoes a{
+width: 15px;
+height: 15px;
+border-radius: 50%;
+margin: 0 10px;
+margin-top: 13px;
+float: left;
+display: inline;
+border: solid 1px black;
+
+}
+.color-shoes--white{
+  
+    background-color: white;
+}
+.color-shoes--green{
+    background-color: green;
+}
+.color-shoes--red{
+    background-color: red;
+}
+.color-shoes--black{
+    background-color: black;
+    
+}
+
+.color-shoes--white, .color-shoes--green, .color-shoes--red, .color-shoes--black{
+    margin-top: 10px;
+}
