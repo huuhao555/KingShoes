@@ -27,12 +27,17 @@ const priceHeader = document.createElement('th');
 priceHeader.textContent = 'Giá';
 headerRow.appendChild(priceHeader);
 
+//Tạo cột chức năng
+const functionHeader = document.createElement('th');
+functionHeader.textContent = 'Chức năng';
+headerRow.appendChild(functionHeader);
 // Thêm dòng tiêu đề vào bảng
+
 table.appendChild(headerRow);
 
 // Tạo một số dòng dữ liệu ví dụ
 // Đây là ví dụ, bạn có thể thêm dữ liệu thực tế tương ứng với ứng dụng của mình
-for (let i = 1; i <= 10; i++) {
+for (let i = 1; i <= 1; i++) {
 const row = document.createElement('tr');
 
 const sttCell = document.createElement('td');
@@ -50,6 +55,12 @@ row.appendChild(nameCell);
 const priceCell = document.createElement('td');
 priceCell.textContent = '$' + i * 100;
 row.appendChild(priceCell);
+
+const functionCell = document.createElement('td');
+const img = document.createElement('img');
+img.src = 'https://as2.ftcdn.net/v2/jpg/05/25/95/99/1000_F_525959949_BNa56hFmSaxNPu9rYVsFxLxXvYdE9pR4.webp';
+// img.alt = 'Mô tả hình ảnh (nếu cần)';
+functionCell.appendChild(img);
 
 // Thêm dòng dữ liệu vào bảng
 table.appendChild(row);
