@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title> Thêm Sản phẩm</title>
+    <title> Danh sách sản phẩm</title>
     <!-- Favicon-->
     <link rel="icon" href="../../favicon.ico" type="image/x-icon">
 
@@ -185,7 +185,7 @@
                                 
                             </li>
                             <li>
-                                <a href="sanpham-capnhat.html" class="menu-toggle">
+                                <a href="sanpham-danhsachcapnhat.html" class="menu-toggle">
                                     <span>Cập nhật sản phẩm</span>
                                 </a>
                                 
@@ -199,7 +199,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="sanpham-danhsachcapnhat.html" class="menu-toggle">
+                        <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">view_list</i>
                             <span>Danh sách sản phẩm</span>
                         </a>
@@ -222,14 +222,14 @@
             <!-- #Footer -->
         </aside>
         <!-- #END# Left Sidebar -->
-        <section class="content" style="width: 50%; padding-left: 200px; ">
+        <section class="content" style="width: 80%; padding-left: 100px; padding-right: 100px;">
             <div class="container-fluid">
                 <div class="row clearfix">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" > 
                         <div class="card">
                             <div class="header">
                                 <h2>
-                                    THÊM SẢN PHẨM
+                                    DANH SÁCH SẢN PHẨM
                                 </h2>
                                 <ul class="header-dropdown m-r--5">
                                     <li class="dropdown">
@@ -240,72 +240,12 @@
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="card">
                                         <div class="body" style="width: 100%;">
-                                            <form id="form_validation" method="POST" action="sanpham-danhsach.html">
-                                                <div class="form-group form-float">
-                                                    <div class="image-container">
-                                                        <img id="uploaded-image" src="placeholder.jpg" alt="Tải hình lên">
-                                                        <input type="file" class="image-upload" id="imageUpload" accept="image/*">
-                                                    </div>
-                                                    <div class="ten-sanpham">
-                                                        <label class="form-label" style="margin-top: 10px; font-size: 15px;">Tên sản phẩm: </label>
-                                                        <input type="text" style= "width: 300px; border: none; border-bottom: dotted 2px #000;" name="name" required>
-                                                    </div>
-                                                    <div class="sanpham-brand">
-                                                        <h2 style="font-size: 15px; width: 110px; position: relative; top: 1px; margin: 0;">  Hãng sản phẩm: </h2>
-                                                        <select name="sanpham-brand" id="sanpham-brand" >
-                                                                <option value="#"> </option>
-                                                                <option value="converse"> Converse</option>
-                                                                <option value="vans"> Vans</option>
-                                                                <option value="jordan"> Jordan</option>
-                                                                <option value="canvas"> Canvas </option>
-                                                                <option value="adidas"> Adidas</option>
-                                                                <option value="nike"> Nike</option>
-                                                                <option value="thuong-dinh"> Thượng đình</option>
-                                                                <option value="ananas"> Ananas</option>
-                                                        </select>
-                                                    </div>
-                                                </br>
-                                                    <div class="gia-sanpham" >
-                                                        <label class="form-label" style="font-size: 15px;">Giá sản phẩm: </label>
-                                                        <input type="text"  style="width: 80px; border: none; border-bottom: dotted 2px #000;" required name="giasanpham" id="numberInput" >
-                                                        <label class="form-label" style="font-weight: normal; font-size: 13px;">VNĐ<label>
-                                                    </div>
-                                                </div>
-                                                    <div class="sanpham-them">
-                                                        <h2 style="font-size: 15px;">Số lượng: </h2>
-                                                        <label class="form-label" style="font-weight: normal;" >Size 37: </label> <input type="number" style="width: 40px;">
-                                                        <label class="form-label" style="font-weight: normal;" >Size 38: </label> <input type="number" style="width: 40px;">
-                                                        <label class="form-label" style="font-weight: normal;" >Size 39: </label> <input type="number" style="width: 40px;">
-                                                        <label class="form-label" style="font-weight: normal;" >Size 40: </label> <input type="number" style="width: 40px;"> </br>
-                                                        <label class="form-label" style="font-weight: normal;" >Size 41: </label> <input type="number" style="width: 40px;">
-                                                        <label class="form-label" style="font-weight: normal;" >Size 42: </label> <input type="number" style="width: 40px;">
-                                                        <label class="form-label" style="font-weight: normal;" >Size 43: </label> <input type="number" style="width: 40px;">
-                                                        <label class="form-label" style="font-weight: normal;" >Size 44: </label> <input type="number" style="width: 40px;">
-                                                    </div> 
-                                                    <div class="color-shoes">
-                                                        <h3>Chọn màu: </h3>
-                                                        <a href="#" class="color-shoes--black"></a>
-                                                        <a href="#" class="color-shoes--white"></a>
-                                                        <a href="#" class="color-shoes--red"></a>
-                                                        <a href="#" class="color-shoes--green"></a>
-                                                        <a href="#" class="color-shoes--blue"></a>
-                                                        <a href="#" class="color-shoes--yellow"></a>
-                                                    </div>
-                                                    <div class="sanpham-chitiet">
-                                                        <h3 style="font-size: 15px;">Chi tiết sản phẩm: </h3>
-                                                        <textarea name="sanpham-chitiet" id="sanpham-chitiet" cols="20" rows="10" style="width: 450px; height: 200px;"></textarea>
-                                                    </div>
-                                                <button class="btn btn-primary waves-effect" type="submit" style="margin-left: 170px;" >Thêm sản phẩm</button>
-                                            </form>
+                                            <form id="form_validation" method="POST" action="sanpham-them.html">
+                                                <div class="sanpham-danhsach" id="tableContainer"></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- #END# Inline Layout | With Floating Label -->
-            </div>
         </section>
     
         <!-- #END# Right Sidebar -->
@@ -375,8 +315,7 @@
      <!-- Demo Js -->
      <script src="../../js/demo.js"></script>
      <script src="../../js/new.js"> </script>
-     <script src="../../js/new2.js"> </script>
-     <script src="../../js/new3.js"> </script>
+     <script src="/js/new2.js"></script>
 </body>
 
 </html>

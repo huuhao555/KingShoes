@@ -1,3 +1,4 @@
+//Thêm ảnh vào thêm sản phẩm
 const imageUpload = document.getElementById('imageUpload');
     const uploadedImage = document.getElementById('uploaded-image');
 
