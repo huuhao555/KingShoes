@@ -1,3 +1,4 @@
+
 // JavaScript để tạo và thêm bảng vào #tableContainer
 const tableContainer = document.getElementById('tableContainer');
 // Tạo cấu trúc bảng tương tự như ở phần trước
@@ -37,7 +38,7 @@ table.appendChild(headerRow);
 
 // Tạo một số dòng dữ liệu ví dụ
 // Đây là ví dụ, bạn có thể thêm dữ liệu thực tế tương ứng với ứng dụng của mình
-for (let i = 1; i <= 1; i++) {
+for (let i = 1; i <= 10; i++) {
 const row = document.createElement('tr');
 
 const sttCell = document.createElement('td');
@@ -56,11 +57,52 @@ const priceCell = document.createElement('td');
 priceCell.textContent = '$' + i * 100;
 row.appendChild(priceCell);
 
-const functionCell = document.createElement('td');
-const img = document.createElement('img');
-img.src = 'https://as2.ftcdn.net/v2/jpg/05/25/95/99/1000_F_525959949_BNa56hFmSaxNPu9rYVsFxLxXvYdE9pR4.webp';
-// img.alt = 'Mô tả hình ảnh (nếu cần)';
-functionCell.appendChild(img);
+// Tạo ô chứa nút "Xoá" và "Cập nhật"
+const actionCell = document.createElement('td');
+
+// Tạo nút "Xoá"
+// Tạo nút "Xoá"
+const deleteButton = document.createElement('button');
+deleteButton.textContent = 'Xoá';
+deleteButton.addEventListener('click', function(event) {
+    // Ngăn chặn hành vi mặc định của nút
+    event.preventDefault();
+    
+    // Hiển thị cửa sổ xác nhận
+    const isConfirmed = confirm('Xoá là mất, mất đừng tìm nhó!');
+    
+    // Nếu người dùng xác nhận, thực hiện chuyển hướng
+    if (isConfirmed) {
+        window.location.href = 'sanpham-xoa.html';
+    }
+});
+
+// Tạo nút "Cập nhật"
+// Tạo nút "Cập nhật"
+const updateButton = document.createElement('button');
+updateButton.textContent = 'Cập nhật';
+updateButton.addEventListener('click', function(event) {
+    // Ngăn chặn hành vi mặc định của nút
+    event.preventDefault();
+    
+    // Hiển thị cửa sổ xác nhận
+    const isConfirmed = confirm('Sure kèo hong bé ơi!!!');
+    
+    // Nếu người dùng xác nhận, thực hiện chuyển hướng
+    if (isConfirmed) {
+        window.location.href = 'sanpham-capnhat.html';
+    }
+});
+
+
+
+// Thêm cả hai nút vào ô chứa
+actionCell.appendChild(deleteButton);
+actionCell.appendChild(updateButton);
+actionCell.style.marginRight = '20px';
+
+// Thêm ô chứa nút vào dòng
+row.appendChild(actionCell);
 
 // Thêm dòng dữ liệu vào bảng
 table.appendChild(row);
@@ -69,6 +111,6 @@ table.appendChild(row);
 // Thêm bảng vào body của trang
 document.body.appendChild(table);
 
-
 // Thêm bảng vào #tableContainer
 tableContainer.appendChild(table);
+
