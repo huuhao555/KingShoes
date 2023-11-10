@@ -9,7 +9,8 @@
     <link rel="icon" href="../../favicon.ico" type="image/x-icon">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet"
+        type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap Core Css -->
@@ -33,14 +34,15 @@
         </div>
         <div class="card">
             <div class="body">
-                <form id="sign_in" method="POST" action="::/index.html">
+                <form id="sign_in" method="POST" action="">
                     <div class="msg">Đăng nhập để bắt đầu phiên của bạn</div>
                     <div class="input-group">
                         <span class="input-group-addon">
                             <i class="material-icons">person</i>
                         </span>
                         <div class="form-line">
-                            <input type="text" class="form-control" name="username" placeholder="Tên đăng nhập" required autofocus>
+                            <input type="text" class="form-control" name="username" id="username" placeholder="Tên đăng nhập" required
+                                autofocus>
                         </div>
                     </div>
                     <div class="input-group">
@@ -48,7 +50,7 @@
                             <i class="material-icons">lock</i>
                         </span>
                         <div class="form-line">
-                            <input type="password" class="form-control" name="password" placeholder="Mật khẩu" required>
+                            <input type="password" class="form-control" name="password" id="password" placeholder="Mật khẩu" required>
                         </div>
                     </div>
                     <div class="row">
@@ -88,6 +90,9 @@
     <!-- Custom Js -->
     <script src="../../js/admin.js"></script>
     <script src="../../js/pages/examples/sign-in.js"></script>
+    <!-- Login Js -->
+    <script src="../../js/login.js"></script>
+
 </body>
 
 </html>
