@@ -64,18 +64,24 @@ const actionCell = document.createElement('td');
 // Tạo nút "Xoá"
 const deleteButton = document.createElement('button');
 deleteButton.textContent = 'Xoá';
+// ...
+
 deleteButton.addEventListener('click', function(event) {
-    // Ngăn chặn hành vi mặc định của nút
     event.preventDefault();
     
-    // Hiển thị cửa sổ xác nhận
     const isConfirmed = confirm('Xoá là mất, mất đừng tìm nhó!');
     
-    // Nếu người dùng xác nhận, thực hiện chuyển hướng
     if (isConfirmed) {
-        window.location.href = 'sanpham-xoa.html';
+        // Tìm hàng cha của nút đã được click
+        const row = event.target.parentNode.parentNode;
+        
+        // Loại bỏ hàng đó từ bảng
+        table.removeChild(row);
+        
+        // (Tùy chọn) Có thể thêm logic xử lý sau khi xoá ở đây, ví dụ: cập nhật cơ sở dữ liệu, thông báo thành công, vv.
     }
 });
+
 
 // Tạo nút "Cập nhật"
 // Tạo nút "Cập nhật"
