@@ -27,12 +27,12 @@ document.addEventListener("DOMContentLoaded", function  () {
       // Set up the callback function to handle the response
       xhr.onreadystatechange = function () {
           if (xhr.readyState === 4) {
+            var response = JSON.parse(xhr.responseText);
               if (xhr.status === 200) {
-                var response = JSON.parse(xhr.responseText);
                 (response.admin) ? window.location.href = "/api-ecommerce/KingShoes/index.html" : alert('Không phải admin bé ơi') 
               } else {
                   // Handle errors or display a message to the user
-                  console.error("Login failed");
+                  alert(response.message);
               }
           }
       };
