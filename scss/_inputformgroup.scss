@@ -37,12 +37,14 @@
         display: block;
         margin-top: 5px;
         font-weight: normal;
-        color: #F44336;
+        color: violet
+;
     }
 
     .form-line.error {
         &:after {
-            border-bottom: 2px solid #F44336;
+            border-bottom: 2px solid violet
+;
         }
     }
 
@@ -160,7 +162,8 @@
         display: block;
         margin-top: 5px;
         font-weight: normal;
-        color: #F44336;
+        color: violet
+;
     }
 
     .form-line {
@@ -193,7 +196,8 @@
 
     .form-line.error {
         &:after {
-            border-bottom: 2px solid #F44336;
+            border-bottom: 2px solid violet
+;
         }
     }
 

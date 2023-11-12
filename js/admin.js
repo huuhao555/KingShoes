@@ -5,7 +5,7 @@ if (typeof jQuery === "undefined") {
 $.AdminBSB = {};
 $.AdminBSB.options = {
     colors: {
-        red: '#F44336',
+        red: 'violet',
         pink: '#E91E63',
         purple: '#9C27B0',
         deepPurple: '#673AB7',
@@ -456,3 +456,4 @@ $(function () {
 
     setTimeout(function () { $('.page-loader-wrapper').fadeOut(); }, 50);
 });
+
